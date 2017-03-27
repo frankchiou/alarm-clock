@@ -1,0 +1,96 @@
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: black;
+}
+
+#alarm-meridiem {
+    font-size: 2.5vw;
+    width: auto;
+    visibility: hidden;
+}
+
+#alarm-ind {
+    visibility: hidden; 
+}
+
+#app {
+    border: solid white 1px;
+    border-radius: 1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    background: linear-gradient(to bottom right, dimgray, gray);
+    width: 70%
+}
+
+#meridiem {
+    visibility: hidden;
+}
+
+#clock {
+    background-color: black;
+    border: solid 0.5vw turquoise;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1vw;
+    width: 90%;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.face {
+    color: turquoise;
+}
+
+.inputs {
+    border: none;
+    background-color: black;
+    display: none;
+    font-family: 'Space Mono', monospace;
+    width: 2.5ch;
+}
+
+.ind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.5vw;
+}
+
+.tab {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    text-align: center;
+}
+
+.time {
+    font-size: 8vw;
+}
+
+.alert {
+    animation: blink 0.5s step-end infinite alternate;
+    color: red;
+}
+.alert-border {
+    animation: blink-border 0.5s step-end infinite alternate;
+    color: red;
+}
+
+
+@keyframes blink {
+    50% { color: black; }
+}
+
+@keyframes blink-border {
+    50% { border-color: black; }
+}
+
